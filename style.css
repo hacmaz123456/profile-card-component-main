@@ -1,0 +1,90 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body {
+    background-color: rgb(20, 180, 180);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: 'Kumbh Sans';
+    position: relative;
+}
+.main {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 100px;
+}
+.container {
+    text-align: center;
+    background-color: white;
+    background-image: url(images/bg-pattern-card.svg);
+    background-size: 100% 40%;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.274);
+}
+.avatar {
+    margin-top: 120px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+.name {
+    font-size: 15px;
+}
+.weight {
+    font-weight: bolder;
+    font-size: 25px;
+}
+.lighter {
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.452);
+}
+.live {
+    margin: 15px auto;
+}
+hr {
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    margin: 25px auto;
+}
+.flex {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 40px;
+}
+.activity {
+    margin-top: 10px;
+}
+.bg-top, .bg-bot {
+    position: absolute;
+    width: 50%;
+}
+.bg-top {
+    top: -30%;
+    left: 0;
+}
+.bg-bot {
+    bottom: -30%;
+    right: -20%;
+}
+@media only screen and (max-width: 500px) {
+    .main {
+        padding: 30px;
+    }
+    .avatar {
+        max-width: 50%;
+    }
+    .name {
+        font-size: 13px;
+    }
+    .weight {
+        font-size: 15px;
+    }
+    .live, .activity {
+        font-size: 11px;
+    }
+    .bg-bot {
+        bottom: -5%;
+    }
+}
